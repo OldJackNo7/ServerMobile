@@ -6,7 +6,8 @@
   "scripts": {
     "test": "mocha --compilers js:babel-core/register src/**/*.spec.js",
     "start": "backpack dev",
-    "build": "backpack build"
+    "build": "backpack build",
+    "production": "backpack build && node ./build/main.js"
   },
   "author": "",
   "license": "ISC",
