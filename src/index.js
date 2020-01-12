@@ -30,6 +30,6 @@ protectedApiRouter.use('/item', noteRouter.routes()).use('/cat', catRouter.route
 app.use(protectedApiRouter.routes()).use(protectedApiRouter.allowedMethods());
 
 if (!module.parent) {
-    app.listen(3000);
-    console.log('started on port 3000');
+    app.listen(80);
+    console.log('started on port 80');
 }
